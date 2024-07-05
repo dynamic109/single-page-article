@@ -36,6 +36,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
+  border-radius: 0 0 10px 10px;
 }
 
 .user-info {
@@ -96,5 +97,32 @@ footer {
   }
   #share-icon {
     width: 13px;
+  }
+}
+
+@media (min-width: 760px) {
+  main {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  main > .image-drawer {
+    border-radius: 5px 0 0 5px;
+    width: 40%;
+    height: auto;
+  }
+  footer {
+    align-self: baseline;
+    border-radius: 0 0 10px 0;
+    margin-top: auto;
+  }
+}
+
+@media(min-width: 1024px){
+  main{
+    width: 60%;
   }
 }
